@@ -1,6 +1,6 @@
 WORKDIR=$(shell pwd)
 IMAGE=packettracer
-STORAGE=/media/chakir/winDisk/FILE/KFU/Student_2.2/network
+STORAGE=storage
 
 all:
 	@echo "make build:  creates a docker image (${IMAGE})"
@@ -11,12 +11,12 @@ build:
 	docker build -t ${IMAGE} .
 
 run:
-# 	@mkdir -p ${STORAGE}
-	@docker run -ti --rm --network none -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${STORAGE}:/home/pt/storage ${IMAGE}
+	@mkdir -p ${STORAGE}
+	@docker run -ti --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE}
 
 shell:
-# 	@mkdir -p ${STORAGE}
-	@docker run -ti --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${STORAGE}:/home/pt/storage ${IMAGE} /bin/bash
+	@mkdir -p ${STORAGE}
+	@docker run -ti --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE} /bin/bash
 
 clean:
 	docker rmi ${IMAGE}
