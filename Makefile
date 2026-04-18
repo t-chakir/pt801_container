@@ -12,7 +12,7 @@ build:
 
 run:
 	@mkdir -p ${STORAGE}
-	@docker run -ti --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE}
+	@docker run -ti --rm --network none -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v ${WORKDIR}/${STORAGE}:/home/pt/storage ${IMAGE}
 
 shell:
 	@mkdir -p ${STORAGE}
