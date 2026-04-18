@@ -39,7 +39,13 @@ If you want to change the path, change it [Makefile](https://github.com/t-chakir
 - Docker
 - X11 server
 - Allow X11 access:
+
+`xhost` is a utility for managing access to the X11 server (your system's graphical server).
 ```bash
-xhost +local:docker
+xhost +local:docker # allows local Docker containers to connect to your screen
+```
+
+```bash
+xhost # local:docker — prevents access
 ```
 
