@@ -15,7 +15,7 @@
 This project uses the `--no-sandbox` option.
 
 Reason:
-- When running Cisco Packet Tracer, especially PT Activity tasks, content may not display or function correctly without this flag.
+When running Cisco Packet Tracer, especially PT Activity tasks, content may not display or function correctly without this flag.
 
 If you do not need PT Activity features or prefer a more secure setup, you can remove the `--no-sandbox` option from the [packettracer](https://github.com/t-chakir/pt801_container/blob/main/packettracer) launch command.
 
@@ -35,10 +35,6 @@ make run     # starts packettracer
 make shell   # opens a shell in the container
 make clean   # removes packettracer image
 ```
-
----
-
-
 
 ---
 
