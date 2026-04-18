@@ -30,10 +30,10 @@ git clone https://github.com:frzifus/docker-pt.git
 ## Use the command only inside the repository
 
 ```bash
-make build   # creates a docker image packettracer
-make run     # starts packettracer
-make shell   # opens a shell in the container
-make clean   # removes packettracer image
+make build   # Build Docker image (packettracer)
+make run     # Start Packet Tracer container
+make shell   # Open shell inside container
+make clean   # Remove Docker image
 ```
 
 ---
@@ -46,3 +46,4 @@ make clean   # removes packettracer image
 ```bash
 xhost +local:docker
 ```
+
