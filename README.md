@@ -30,6 +30,8 @@ make shell   # Open shell inside container
 make clean   # Remove Docker image
 ```
 
+If you want to change the path, change it [Makefile](https://github.com/t-chakir/pt801_container/blob/main/Makefile). The meaning of `storage`.
+
 ---
 
 ## Requirements
