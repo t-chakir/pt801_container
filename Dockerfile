@@ -50,8 +50,6 @@ RUN set -e; \
     useradd -m -s /bin/bash pt; \
     chown -R pt:pt /home/pt; \
     mkdir -p /home/pt/storage; \
-    locale-gen ru_RU.UTF-8; \
-    update-locale LANG=ru_RU.UTF-8; \
     URL="https://archive.org/download/cisco-packet-tracer-801-ubuntu-64bit/CiscoPacketTracer_801_Ubuntu_64bit.deb"; \
     wget -O /tmp/${PT_DEB} "$URL" || curl -L -o /tmp/${PT_DEB} "$URL"; \
     cd /tmp; \
