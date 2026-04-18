@@ -21,12 +21,6 @@ If you do not need PT Activity features or prefer a more secure setup, you can r
 
 ---
 
-## Git clone in PC
-
-```bash
-git clone https://github.com:frzifus/docker-pt.git
-```
-
 ## Use the command only inside the repository
 
 ```bash
