@@ -50,4 +50,12 @@ After finishing work
 ```bash
 xhost # local:docker — prevents access
 ```
+---
+
+## Download sources
+
+- [Cisco Packet Tracer 8.0.1 Main](https://archive.org/download/cisco-packet-tracer-801-ubuntu-64bit)
+
+- [Cisco Packet Tracer 8.0.1 Additionally](https://www.sysnettechsolutions.com/en/download-cisco-packet-tracer/#old-version-cisco-packet-tracer-download)
+
 
