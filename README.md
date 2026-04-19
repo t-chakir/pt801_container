@@ -45,6 +45,8 @@ If you want to change the path, change it [Makefile](https://github.com/t-chakir
 xhost +local:docker # allows local Docker containers to connect to your screen
 ```
 
+After finishing work
+
 ```bash
 xhost # local:docker — prevents access
 ```
