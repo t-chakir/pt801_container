@@ -48,7 +48,7 @@ xhost +local:docker # allows local Docker containers to connect to your screen
 After finishing work
 
 ```bash
-xhost # local:docker — prevents access
+xhost -local:docker
 ```
 ---
 
